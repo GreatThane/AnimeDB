@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Suggest-o-matic</title>
+</head>
+<body>
+<form action="#" th:action="@{/suggestions}" th:object="${suggestionRequest}" method="post">
+    mal user name <input type="text" th:field="*{malusername}" /><br/>
+    accuracy <input type="text" th:field="*{accuracy}" /><br/>
+    minimum rating <input type="text" th:field="*{minimumRating}" /><br/>
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
